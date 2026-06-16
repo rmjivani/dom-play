@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Title Goes Here</title>
+     <title>Hamlet DOM Play by Rizwan Jivani</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
@@ -20,29 +20,51 @@
  </head>
  <body>
      <header>
-     <h1>Title Goes Here</h1>
+     <h1>Hamlet DOM Play by Rizwan Jivani</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
+            <a href="https://shakespeare.mit.edu/hamlet/full.html" target="_blank">Hamlet Script</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
 
    <main class="wrapper">
+
+    <h2>Script</h2>
+
+    <p><em>Click on any character's line to highlight all lines spoken by that character.</em></p>
+    
     <div id="play">
-        <p><span data-actor="hamlet">Hamlet: To be or not to be?</span></p>
-        <p><span data-actor="skull">Skull: Are you talking to me?</span></p>
-        <p><span data-actor="hamlet">Hamlet: What did you say?</span></p>
+        <p><span data-actor="hamlet"><strong>Hamlet:</strong> To be, or not to be: that is the question.</span></p>
+        <p><span data-actor="ophelia"><strong>Ophelia:</strong> Good my lord, how does your honour for this many a day?</span></p>
+        <p><span data-actor="hamlet"><strong>Hamlet:</strong> I humbly thank you; well, well, well.</span></p>
+        <p><span data-actor="ophelia"><strong>Ophelia:</strong> My lord, I have remembrances of yours, that I have longed long to re-deliver.</span></p>
+        <p><span data-actor="claudius"><strong>Claudius:</strong> And can you, by no drift of circumstance, get from him why he puts on this confusion?</span></p>
+        <p><span data-actor="hamlet"><strong>Hamlet:</strong> No, not I; I never gave you aught.</span></p>
+        <p><span data-actor="claudius"><strong>Claudius:</strong> Love! his affections do not that way tend.</span></p>
+        <p><span data-actor="ophelia"><strong>Ophelia:</strong> O, what a noble mind is here o'erthrown!</span></p>
+        <p><span data-actor="hamlet"><strong>Hamlet:</strong> Get thee to a nunnery.</span></p>
     </div>
 
-     <footer>
-      <p><small>&copy; 2026 by 
-          YOUR NAME HERE, All Rights Reserved ~ 
+    <section>
+        <h2>How It Works</h2>
+
+        <p>This page uses JavaScript and the DOM to highlight lines spoken by a selected character. Each line contains a data-actor attribute. When a user clicks a line, 
+            JavaScript identifies the actor and highlights every line spoken by that actor while removing the highlight from all other characters.</p>
+    </section>
+
+
+    <footer>
+      <p>
+        <small>&copy; 2026 by Rizwan Jivani, All Rights Reserved ~ 
           <a id="html-checker" href="#">Check HTML</a> ~ 
-          <a id="css-checker" href="#">Check CSS</a></small>
-     </p>
+          <a id="css-checker" href="#">Check CSS</a>
+        </small>
+    </p>
     </footer>
+
   </main>
+
   <script src="js/main.js"></script>
   <script src="js/dom-play.js"></script>
  </body>

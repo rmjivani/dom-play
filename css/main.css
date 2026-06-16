@@ -53,6 +53,32 @@ footer {
     padding: 1em;
 }
 
+#play {
+    background-color: #f7f7f7;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+#play p {
+    margin: 12px 0;
+}
+
+#play span {
+    background-color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+
+    transition:
+        background-color 0.3s ease,
+        text-shadow 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
 /* Responsive rules */
 
 /* DESKTOP */
